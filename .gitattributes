@@ -1,1 +1,5 @@
 exp2_Linux/part1_petalinux/need_file/linux-4.14.0-v2018.3.tar.gz filter=lfs diff=lfs merge=lfs -text
+exp2_Linux/part2_ORBSLAM/orb_test.tar.gz filter=lfs diff=lfs merge=lfs -text
+exp2_Linux/part2_ORBSLAM/tag.zip filter=lfs diff=lfs merge=lfs -text
+exp2_Linux/part2_ORBSLAM/tag_bak.zip filter=lfs diff=lfs merge=lfs -text
+project_and_VM/exp1_orb/part2_HDMI/project_my.zip filter=lfs diff=lfs merge=lfs -text
