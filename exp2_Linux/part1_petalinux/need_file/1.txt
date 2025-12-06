@@ -1,0 +1,14 @@
+sudo apt-get install -y tofrodos iproute2 gawk gcc g++ git make net-tools libncurses5-dev tftpd-hpa zlib1g:i386 libssl-dev flex bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo zlib1g-dev gcc-multilib build-essential libsdl1.2-dev libglib2.0-dev screen pax gzip automake
+
+
+source ~/Data_base/peta_2018/settings.sh
+petalinux-create --type project --template zynq --name petalinux_prj
+
+petalinux-config --get-hw-description=.
+petalinux-build
+
+bit
+petalinux-package --boot --fsbl zynq_fsbl.elf --fpga --u-boot --force
+no-bit
+petalinux-package --boot --fsbl zynq_fsbl.elf --u-boot --force
+
